@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 2분반 1번</title>   
+    <link href="https://fonts.googleapis.com/css?family=Hi+Melody&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Hi Melody', cursive;
+        font-size: 20px;
+      }
+    
+        
+        span{background-color: lightgrey;
+        color: red;}
+        input{border: 2px solid grey;}
+        input:hover{background-color: pink;
+        color: blue;
+    font-size: 15px;}
+    .sec2{border: 2px solid black; background-color: lightgray; 
+        width: 270px; height: 100px; padding: 20px 10px; position: absolute;}
+    .sec2 div{
+        border: 1px solid gray;
+        display: inline-block;
+padding: 30px 0px;
+margin: 0px;
+width: 30px; height: 30px;
+text-align: center;
+box-shadow: 3px 3px 0 black;}
+    div:hover{ background-color: purple;
+        left: 3px; top: 3px;
+        box-shadow: none;
+        animation: color-change 1s;
+    }
+    @keyframes color-change {
+        0% {
+          background-color: red;
+        }
+        50% {
+          background-color: yellow;
+        }
+        100% {
+          background-color: purple;
+        }
+      }
+
+    </style>
+    <style>
+        /* 처음에 배경색이 red, 중간에 yellow, 마지막에 purple인 애니메이션을 정의하세요. */
+        
+
+        
+        /* 문제에 맞도록 form 내부에 적용되는 스타일을 작성하세요. */
+
+        
+
+        /* 문제에 맞도록 건반 연주 내용에 적용되는 스타일을 작성하세요. */
+
+        
+    </style>
+</head>
+<body>    
+    <section class="sec1" >
+        <h2>회원정보 입력</h2>
+        <form name="fo" method="GET" enctype="" action="example3_1.html">
+            <p ><span>이름:</span> <input type="text" width="100" name="id" placeholder="이름을 입력하세요"></p>
+            <p><span>패스워드:</span> <input type="password" width="100" name="pw" placeholder="4자리 이상"></p>
+            <p><span>검색어:</span> <input type="text" width="100" name="query" placeholder="id@domin.com"></p>
+    </section>
+    <fieldset>
+    <legend>성별</legend>
+ <input type="radio" name="gender"checked>남성
+    <input type="radio" name="gender">여성 
+</fieldset>
+<fieldset>
+    <legend>관심분야</legend>
+    <input type="checkbox" name="fav" checked>it
+    <input type="checkbox" name="fav">인공지능
+    <input type="checkbox" name="fav">외모
+    <input type="checkbox" name="fav">운동
+</fieldset>
+<fieldset>
+    <legend>메뉴 고르기</legend>
+ <input type="radio" name="food">짜장면
+    <input type="radio" name="food" checked>짬뽕
+    <input type="radio" name="food">볶음밥
+    <input type="radio" name="food">잡채밥
+</fieldset>
+<hr>
+    <h2>건반 연주</h2>
+    <!-- 이하 변경 금지!!!  -->
+    <section class="sec2">        
+        <div class="dv1">도</div>
+        <div class="dv2">레</div>
+        <div class="dv3">미</div>
+        <div class="dv4">파</div>
+        <div class="dv5">솔</div>
+        <div class="dv6">라</div>
+        <div class="dv7">시</div>
+    </section>
+    <hr>    
+</body>
+</html>

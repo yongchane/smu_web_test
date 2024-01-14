@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2023 2분반 2번</title>
+	<style>
+        nav {
+            background-color:skyblue;
+            border:3px solid lightgrey;
+            margin:-8px;
+            position: relative;
+        }
+        section, div {
+            display:inline-block;
+            text-align:center;
+            font-size:25px;
+            font-weight:bold;
+            background-color:yellow;	
+            width: 150px;
+            height: 40px;	
+            margin:5px 0px;	
+            border-radius: 20px;
+        }
+        label{
+            display:block;
+            font-size:20px;
+        }
+        button {
+            position : absolute;
+            top:200px;
+        }
+.sub{border-radius: 20px;
+height: 120px;
+text-align: center;
+font: bold 20px;
+background-color: RGB(120,150,170);
+position: absolute;
+top: -50px;
+  left: 3px;
+  transform: translateX(-50%);
+  transition: top 1s ease-in-out;
+  z-index: -1;
+}
+#num1{ left: 3px;}
+#num2{ left: 153px;}
+#num3{ left: 303px;}
+.sub:hover {
+    top: 53px;
+  color: red;
+  
+}
+section a {
+        color: cyan;
+        text-decoration: none;
+    }
+
+    section a:hover {
+        color: red;
+    }
+        /* 주어진 문제에 맞는 스타일을 완성하시오. */
+
+
+
+	</style>
+</head>
+<body>
+    <nav>
+        <div>Image</div><div>Search</div><div>Site</div>
+    </nav>
+    <section id=num1 class=sub><!-- 문제에 맞도록 a 태그를 완성하시오. -->
+        <label><a href="Koala.jpg">코알라</a></label>
+        <label><a href="Penguins.jpg">펭귄</a></label>
+        <label><a href="Tulips.jpg">튤립</a></label>
+    </section>
+        
+    <section id=num2 class=sub><!-- 문제에 맞도록 a 태그를 완성하시오. -->
+        <label><a href="">HTML5</a></label>
+        <label><a href="">CSS3</a></label>
+        <label><a href="">Javascript</a></label>
+    </section>
+        
+    <section id=num3 class=sub><!-- 문제에 맞도록 a 태그를 완성하시오. -->
+        <label><a href="http://www.smu.ac.kr">상명대학교</a></label>
+        <label><a href="http://www.naver.com">NAVER</a></label>
+        <label><a href="http://www.google.com">GOOGLE</a></label>
+    </section>	
+    
+    <button onclick="run()">스크립트 실행</button>
+    <script>
+        function run() {
+            /* 숫자를 입력받아 1부터 입력받은 숫자까지 3의 배수들만 모두 합한 결과를 
+            alert를 이용하여 출력하는 함수를 완성하세요. */
+            let num = prompt("숫자를 입력하세요.");
+            let sum = 0;
+            for (let i = 1; i <= num; i++) {
+                if (i % 3 === 0) {
+                    sum += i;
+                }
+            }
+            alert(`1부터 ${num}까지의 3의 배수의 합은 ${sum}입니다.`);
+
+
+        }
+    </script>
+</body>
+</html>
